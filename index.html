@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="bg-info p-5 w-75 m-auto rounded-4">
+        <label for="name">Contact Name</label>
+        <input type="text" id="name" class="form-control my-2">
+        <div class="alert alert-danger my-2 py-2 d-none" id="nameAlert">Contact Name should be .........</div>
+        <label for="phone">Contact Phone</label>
+        <input type="tel" id="phone" class="form-control my-2">
+        <div class="alert alert-danger my-2 py-2 d-none" id="phoneAlert">Contact Phone should be .........</div>
+        <label for="mail">Contact Email</label>
+        <input type="email" id="mail" class="form-control my-2">
+        <label for="description">Contact description</label>
+        <textarea id="description" class="form-control my-2"></textarea>
+        <button disabled type="submit" id="submit" class="btn btn-primary float-end" >Add Contact</button >
+            <div class="clearfix"></div>
+    <input type="search" id="searchInput" class="form-control my-3" placeholder="search by name.........">
+
+
+<table class="table table-striped my-4">
+    <thead>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>email</th>
+        <th>description</th>
+        <th>Acthion</th>
+    </thead>
+    <tbody id="tableBody">
+
+    </tbody>
+</table>
+</div>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/min.js"></script>
+</body>
+</html>
